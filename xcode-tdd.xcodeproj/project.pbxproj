@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA011AC1266A2BBE0011F893 /* SocialFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA011AC0266A2BBE0011F893 /* SocialFeed.swift */; };
+		BA011AC5266A2D150011F893 /* SocialFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA011AC4266A2D150011F893 /* SocialFeedLoader.swift */; };
 		BA6032EC2669EB8800642B92 /* xcode_tdd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6032E22669EB8800642B92 /* xcode_tdd.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +23,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA011AC0266A2BBE0011F893 /* SocialFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialFeed.swift; sourceTree = "<group>"; };
+		BA011AC4266A2D150011F893 /* SocialFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialFeedLoader.swift; sourceTree = "<group>"; };
 		BA6032E22669EB8800642B92 /* xcode_tdd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = xcode_tdd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6032E62669EB8800642B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6032EB2669EB8800642B92 /* xcode-tddTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xcode-tddTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA011ABF266A2AD80011F893 /* Social Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				BA011AC0266A2BBE0011F893 /* SocialFeed.swift */,
+				BA011AC4266A2D150011F893 /* SocialFeedLoader.swift */,
+			);
+			path = "Social Feeds";
+			sourceTree = "<group>";
+		};
 		BA6032D82669EB8800642B92 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +80,7 @@
 		BA6032E42669EB8800642B92 /* xcode-tdd */ = {
 			isa = PBXGroup;
 			children = (
+				BA011ABF266A2AD80011F893 /* Social Feeds */,
 				BA6032E62669EB8800642B92 /* Info.plist */,
 			);
 			path = "xcode-tdd";
@@ -140,6 +154,7 @@
 				TargetAttributes = {
 					BA6032E12669EB8800642B92 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					BA6032EA2669EB8800642B92 = {
 						CreatedOnToolsVersion = 12.3;
@@ -187,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA011AC1266A2BBE0011F893 /* SocialFeed.swift in Sources */,
+				BA011AC5266A2D150011F893 /* SocialFeedLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +349,7 @@
 		BA6032F72669EB8900642B92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -348,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anglebyte.xcode-tdd";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -355,6 +374,7 @@
 		BA6032F82669EB8900642B92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -378,6 +398,7 @@
 		BA6032FA2669EB8900642B92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "xcode-tddTests/Info.plist";
@@ -395,6 +416,7 @@
 		BA6032FB2669EB8900642B92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "xcode-tddTests/Info.plist";
