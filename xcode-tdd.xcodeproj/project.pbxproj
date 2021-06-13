@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BA011AC1266A2BBE0011F893 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA011AC0266A2BBE0011F893 /* FeedItem.swift */; };
 		BA011AC5266A2D150011F893 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA011AC4266A2D150011F893 /* FeedLoader.swift */; };
+		BA48422226765A490084E2B7 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA48422126765A490084E2B7 /* RemoteFeedLoaderTests.swift */; };
 		BA6032EC2669EB8800642B92 /* xcode_tdd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6032E22669EB8800642B92 /* xcode_tdd.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		BA011AC0266A2BBE0011F893 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		BA011AC4266A2D150011F893 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
+		BA48422126765A490084E2B7 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		BA6032E22669EB8800642B92 /* xcode_tdd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = xcode_tdd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6032E62669EB8800642B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6032EB2669EB8800642B92 /* xcode-tddTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xcode-tddTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				BA6032F22669EB8900642B92 /* Info.plist */,
+				BA48422126765A490084E2B7 /* RemoteFeedLoaderTests.swift */,
 			);
 			path = "xcode-tddTests";
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 					};
 					BA6032EA2669EB8800642B92 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -211,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA48422226765A490084E2B7 /* RemoteFeedLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "xcode-tddTests/Info.plist";
@@ -409,6 +415,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anglebyte.xcode-tddTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -417,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "xcode-tddTests/Info.plist";
