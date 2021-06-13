@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA011AC1266A2BBE0011F893 /* SocialFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA011AC0266A2BBE0011F893 /* SocialFeed.swift */; };
-		BA011AC5266A2D150011F893 /* SocialFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA011AC4266A2D150011F893 /* SocialFeedLoader.swift */; };
+		BA011AC1266A2BBE0011F893 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA011AC0266A2BBE0011F893 /* FeedItem.swift */; };
+		BA011AC5266A2D150011F893 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA011AC4266A2D150011F893 /* FeedLoader.swift */; };
 		BA6032EC2669EB8800642B92 /* xcode_tdd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6032E22669EB8800642B92 /* xcode_tdd.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +23,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BA011AC0266A2BBE0011F893 /* SocialFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialFeed.swift; sourceTree = "<group>"; };
-		BA011AC4266A2D150011F893 /* SocialFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialFeedLoader.swift; sourceTree = "<group>"; };
+		BA011AC0266A2BBE0011F893 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		BA011AC4266A2D150011F893 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		BA6032E22669EB8800642B92 /* xcode_tdd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = xcode_tdd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6032E62669EB8800642B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6032EB2669EB8800642B92 /* xcode-tddTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xcode-tddTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,13 +50,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BA011ABF266A2AD80011F893 /* Social Feeds */ = {
+		BA011ABF266A2AD80011F893 /* Feeds */ = {
 			isa = PBXGroup;
 			children = (
-				BA011AC0266A2BBE0011F893 /* SocialFeed.swift */,
-				BA011AC4266A2D150011F893 /* SocialFeedLoader.swift */,
+				BA011AC0266A2BBE0011F893 /* FeedItem.swift */,
+				BA011AC4266A2D150011F893 /* FeedLoader.swift */,
 			);
-			path = "Social Feeds";
+			path = Feeds;
 			sourceTree = "<group>";
 		};
 		BA6032D82669EB8800642B92 = {
@@ -80,7 +80,7 @@
 		BA6032E42669EB8800642B92 /* xcode-tdd */ = {
 			isa = PBXGroup;
 			children = (
-				BA011ABF266A2AD80011F893 /* Social Feeds */,
+				BA011ABF266A2AD80011F893 /* Feeds */,
 				BA6032E62669EB8800642B92 /* Info.plist */,
 			);
 			path = "xcode-tdd";
@@ -202,8 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA011AC1266A2BBE0011F893 /* SocialFeed.swift in Sources */,
-				BA011AC5266A2D150011F893 /* SocialFeedLoader.swift in Sources */,
+				BA011AC1266A2BBE0011F893 /* FeedItem.swift in Sources */,
+				BA011AC5266A2D150011F893 /* FeedLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
