@@ -10,6 +10,7 @@
 		BA011AC1266A2BBE0011F893 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA011AC0266A2BBE0011F893 /* FeedItem.swift */; };
 		BA011AC5266A2D150011F893 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA011AC4266A2D150011F893 /* FeedLoader.swift */; };
 		BA48422226765A490084E2B7 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA48422126765A490084E2B7 /* RemoteFeedLoaderTests.swift */; };
+		BA48422B2676889E0084E2B7 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA48422A2676889E0084E2B7 /* RemoteFeedLoader.swift */; };
 		BA6032EC2669EB8800642B92 /* xcode_tdd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6032E22669EB8800642B92 /* xcode_tdd.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		BA011AC0266A2BBE0011F893 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		BA011AC4266A2D150011F893 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		BA48422126765A490084E2B7 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
+		BA48422A2676889E0084E2B7 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		BA6032E22669EB8800642B92 /* xcode_tdd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = xcode_tdd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6032E62669EB8800642B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6032EB2669EB8800642B92 /* xcode-tddTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xcode-tddTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,14 @@
 			path = Feeds;
 			sourceTree = "<group>";
 		};
+		BA4842292676884B0084E2B7 /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				BA48422A2676889E0084E2B7 /* RemoteFeedLoader.swift */,
+			);
+			path = "Feed API";
+			sourceTree = "<group>";
+		};
 		BA6032D82669EB8800642B92 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		BA6032E42669EB8800642B92 /* xcode-tdd */ = {
 			isa = PBXGroup;
 			children = (
+				BA4842292676884B0084E2B7 /* Feed API */,
 				BA011ABF266A2AD80011F893 /* Feeds */,
 				BA6032E62669EB8800642B92 /* Info.plist */,
 			);
@@ -207,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA011AC1266A2BBE0011F893 /* FeedItem.swift in Sources */,
+				BA48422B2676889E0084E2B7 /* RemoteFeedLoader.swift in Sources */,
 				BA011AC5266A2D150011F893 /* FeedLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
